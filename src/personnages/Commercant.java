@@ -15,7 +15,7 @@ public class Commercant extends Humain{
 	}
 	
 	public void recevoir(int somme) {
-		parler("Merci humble ronnin, tu aurrais pu me donner plus que " + somme + "sous tout de même !");
+		parler("Merci humble ronnin, tu aurrais pu me donner plus que " + somme + " sous tout de même !");
 		gagnerArgent(somme);
 	}
 	

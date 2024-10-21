@@ -1,1 +1,4 @@
-# PierreEtSabre-ILU1
+# [PierreEtSabre-ILU](https://corentinvaillant.github.io/monkey/)
+
+Dépôt pour le projet Java de TP La pierre et le sabre en ILU1
+

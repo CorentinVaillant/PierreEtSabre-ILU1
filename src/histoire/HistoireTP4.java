@@ -8,10 +8,11 @@ import personnages.Yakuza;
 public class HistoireTP4 {
 
 	public static void main(String[] args) {
-		Commercant marco = new Commercant("Marco", 65468);
-		
+		Yakuza yaku = new Yakuza("Yaku Le noir", "Warsong", "Wisky", 20);
 		Ronnin roro = new Ronnin("Roro", "sacke", 60);
-		roro.donner(marco);
+
+		roro.provoquer(yaku);
+
 
 	}
 	
@@ -38,6 +39,13 @@ public class HistoireTP4 {
 		Yakuza yaku = new Yakuza("Yaku Le noir", "graunuausse", "Wisky", 0);
 		yaku.direBonjour();
 		yaku.extorquer(marco);
+	}
+
+	private void scenar4(){
+		Commercant marco = new Commercant("Marco", 65468);
+		
+		Ronnin roro = new Ronnin("Roro", "sacke", 60);
+		roro.donner(marco);
 	}
 
 }

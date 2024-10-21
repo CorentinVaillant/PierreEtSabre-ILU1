@@ -31,7 +31,7 @@ public class Humain {
 	}
 	
 //methods
-	private void parler(String phrase) {
+	protected void parler(String phrase) {
 		Util.println("(" + nom + ") - " + phrase);
 	}
 	
@@ -45,19 +45,19 @@ public class Humain {
 	
 	public void acheter(String bien, int prix) {
 		if(prix> argent) {
-			parler("Je n'ai plus que "+argent+" sous en poche. Je ne peux même pas m'orir un "+bien+" à"+ prix+" sous.");
+			parler("Je n'ai plus que "+argent+" sous en poche. Je ne peux même pas m'offrir un "+bien+" à"+ prix+" sous.");
 		}
 		else {
 			parler ("j'ai "+ argent+" sous en poche. Je vais pouvoir m'offrir un "+ bien + 	"à " + prix + "sous !");
-			perdreArgent(prix);
+			perdreArgent(prix);	
 		}
 	}
 	
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		argent += gain;
 	}
 	
-	private void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
 		argent -= perte;
 	}
 
